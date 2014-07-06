@@ -1,4 +1,7 @@
-dynamo-observer
-===============
+## Dynamo Observer
 
-AWS DynamoDB Cloud Watch data collector
+AWS DynamoDB Cloud Watch data collector.
+
+## License
+
+MIT
