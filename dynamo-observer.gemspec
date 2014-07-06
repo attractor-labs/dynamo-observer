@@ -19,4 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'rake'
   gem.add_dependency 'rspec'
   gem.add_dependency 'aws-sdk'
+  gem.add_development_dependency 'fake_dynamo'
 end

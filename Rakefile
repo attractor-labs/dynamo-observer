@@ -7,6 +7,10 @@ task :test do
   sh("bundle exec rspec spec/")
 end
 
+task :fake_dynamo do
+  sh("fake_dynamo --port 4567")
+end
+
 # Setup the necessary gems, specified in the gemspec.
 begin
   Bundler.setup(:default, :development)
