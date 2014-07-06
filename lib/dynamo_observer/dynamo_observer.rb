@@ -1,9 +1,10 @@
 class DynamoObserver
 
-  attr_reader :aws_connection
+  attr_reader :dynamo_client
 
   def initialize(config = {})
-    @aws_connection = AWS.config(config[:aws_config])
+    AWS.config(config[:aws_config])
+    @dynamo_client  = AWS::DynamoDB::Client.new(:api_version => '2012-08-10')
   end
 
 end
